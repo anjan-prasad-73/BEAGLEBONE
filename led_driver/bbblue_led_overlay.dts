@@ -1,0 +1,20 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    compatible = "ti,beaglebone";
+
+    /* DO NOT redefine pinmux */
+    /* DO NOT redefine leds node */
+
+    fragment@0 {
+        target-path = "/";
+        __overlay__ {
+            bbblue_led_test {
+                compatible = "bbblue,my-led";
+                gpios = <&gpio1 21 0>;   /* GPIO1_21 = USR0 */
+                status = "okay";
+            };
+        };
+    };
+};

@@ -1,0 +1,16 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    compatible = "ti,beaglebone", "ti,beaglebone-black";
+
+    /* Enable UART1 */
+    fragment@0 {
+        target-path = "/";
+        __overlay__ {
+            compitable="ti,am3352-uart";
+            status = "okay";
+        };
+    };
+};
+

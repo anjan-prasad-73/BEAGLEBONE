@@ -1,0 +1,1 @@
+savedcmd_/home/anis/led_driver/led_driver.ko := ld -r -EL -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o /home/anis/led_driver/led_driver.ko /home/anis/led_driver/led_driver.o /home/anis/led_driver/led_driver.mod.o /home/anis/led_driver/.module-common.o
